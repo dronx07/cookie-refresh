@@ -31,6 +31,8 @@ jobs:
         env:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
+          UNAME: ${{ secrets.UNAME }}
+          PASSWD: ${{ secrets.PASSWD }}
         run: |
           python refresh.py
 
