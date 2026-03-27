@@ -94,7 +94,7 @@ def main():
 
         cookie_sets = {}
 
-        for i in range(1, 4):
+        for i in range(1, 5):
             print(f"Generating cookie set {i}...")
 
             amazon_cookie = fetch_amazon_cookies(p)
