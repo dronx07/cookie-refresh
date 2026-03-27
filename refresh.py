@@ -22,7 +22,7 @@ SETTING = {
 
 def fetch_amazon_cookies(p):
     browser = p.chromium.launch(
-        headless=True,
+        headless=False,
         args=["--disable-blink-features=AutomationControlled"],
         proxy=SETTING
     )
