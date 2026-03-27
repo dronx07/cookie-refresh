@@ -34,7 +34,7 @@ jobs:
           UNAME: ${{ secrets.UNAME }}
           PASSWD: ${{ secrets.PASSWD }}
         run: |
-          python refresh.py
+          xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" python refresh.py
 
       - name: Commit updated cookies.json
         run: |
